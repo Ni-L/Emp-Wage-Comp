@@ -4,22 +4,39 @@ namespace Emp_Wage_C
 {
     class Program
     {
+        /// <summary>
+        /// Defines the entry point of the application.
+        /// </summary>
+        /// <param name="args">The arguments.</param>
         static void Main(string[] args)
         {
-            Console.WriteLine("WelCome To The Employee Wage");
-            int Present = 1;
-            Random random = new Random();
-            int EmpCheck = random.Next(0, 2);
-            Console.WriteLine("EmpCheck: " + EmpCheck);
+            Console.WriteLine("Welcome to Employee wage Calculation....");
+            // Constant Variable
+            int FullTime = 1;                                        //creating a local variable
+            int empRatePerHour = 20;
 
-            if (EmpCheck == Present)
+            //Local Variables
+            int empHrs = 0;
+            int empWage = 0;
+
+            Random random = new Random();                           //Generating Random value
+            int employeeCheck = random.Next(0, 2);       // assigning Random value to the variable 
+            Console.WriteLine("Random Value: " + employeeCheck);
+
+            if (employeeCheck == FullTime)                 //Checking whether Employee is Present or Not
             {
-                Console.WriteLine("Employee PRESENT");
+                Console.WriteLine("Employee is PRESENT");
+                empHrs = 8;
             }
             else
             {
-                Console.WriteLine("Employee ABSENT");
+                Console.WriteLine("Employess is ABSENT");
+                empHrs = 0;
             }
+
+            // computation
+            empWage = empRatePerHour * empHrs;
+            Console.WriteLine("Employee wage per day: " + empWage);
             Console.Read();
         }
     }
