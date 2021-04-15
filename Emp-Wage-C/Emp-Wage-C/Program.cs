@@ -2,66 +2,89 @@
 
 namespace Emp_Wage_C
 {
-    public class Program
+    class Program
     {
         /// <summary>
-        /// Creating Multiple Company
+        /// Creating Program For Employee Wage for Company
         /// </summary>
-        //constants
-        public const int Full_TIME = 1;
-        public const int PART_TIME = 2;
-        //public const int EMP_RATE_PER_HR = 20;
-        //public const int MAX_WORKING_DAYS = 20;
-        //public const int MAX_WORKING_HRS = 100;
-
-        public static void ComputeWage(String companyName, int wagePerHour, int maxWorkingDays, int maxWorkingHours)
+        public class EmpWageBuilder
         {
-            //local variables
-            int empHrs = 0;
-            int empWage = 0;
-            int totalEmpWage = 0;
-            int hrs = 0;
-            int WorkingDays = 1;
+            //constants
+            const int Full_DAY_HOUR = 8;
+            const int PART_TIME_HOUR = 4;
+            const int EMP_FULL_TIME = 1;
+            const int EMP_PART_TIME = 2;
 
-
-            //inbuilt class
-            Random random = new Random();
-            while (hrs < maxWorkingHours && WorkingDays <= maxWorkingDays)
+            string companyName;
+            int wagePerHour;
+            int maxWorkingHours;
+            int maxWorkingDays;
+            int wagePerMonth = 0;
+            public EmpWageBuilder(String companyName, int wagePerHour, int maxWorkingDays, int maxWorkingHours)
             {
-                WorkingDays++;
-                int employeeCheck = random.Next(0, 3);
-
-                //Console.WriteLine("random value " + employeeCheck);
-
-                //selection statements
-
-                switch (employeeCheck)
-                {
-                    case Full_TIME:
-                        empHrs = 8;
-                        break;
-
-                    case PART_TIME:
-                        empHrs = 4;
-                        break;
-
-                    default:
-                        empHrs = 0;
-                        break;
-                }
-                //computation
-                empWage = wagePerHour * empHrs;
-                hrs = empHrs;
-                totalEmpWage += empWage;//totalEmpWage=totalWage+empWage
+                this.companyName = companyName;
+                this.wagePerHour = wagePerHour;
+                this.maxWorkingDays = maxWorkingDays;
+                this.maxWorkingHours = maxWorkingHours;
             }
-            Console.WriteLine("Emp wage for " + companyName + "\t is\t" + totalEmpWage);
+            public void ComputeWage()
+            {
+                //local variables
+                int workingHours = 0;
+                int workingDays = 0;
+                int totalWage = 0;
 
-        }
-        static void Main(string[] args)
-        {
-            ComputeWage("Demart", 20, 20, 40);
-            ComputeWage("Reliance", 15, 15, 30);
-            Console.Read();
+                //inbuilt class
+                Random random = new Random();
+                while (workingHours < maxWorkingHours && workingDays < maxWorkingDays)
+                {
+                    int attendance = random.Next(0, 3);
+                    int hoursWorked = 0;
+
+                    //Console.WriteLine("random value " + employeeCheck);
+
+                    //selection statements
+
+                    switch (attendance)
+                    {
+                        case EMP_FULL_TIME:
+                            workingDays += 1;
+                            hoursWorked = Full_DAY_HOUR;
+                            break;
+
+                        case EMP_PART_TIME:
+                            workingDays += 1;
+                            hoursWorked = PART_TIME_HOUR;
+                            break;
+
+                        default:
+                            break;
+                    } //end switch
+                      //computation
+
+                    workingHours += hoursWorked;
+                    wagePerMonth += (wagePerHour * workingHours);
+                    totalWage += wagePerMonth;//totalEmpWage=totalWage+wagePerMonth
+                } //end while
+                  // Console.WriteLine("Emp wage for " + companyName +"\t is\t" +totalEmpWage);
+
+            }
+            public override string ToString()
+            {
+                return $"Wages for the company {companyName}: {wagePerMonth}";
+            }
+            static void Main(string[] args)
+            {
+                EmpWageBuilder demart = new EmpWageBuilder("Demart", 20, 20, 10);
+                demart.ComputeWage();
+                Console.WriteLine(demart.ToString());
+                EmpWageBuilder realiance = new EmpWageBuilder("Realiance", 10, 30, 20);
+                realiance.ComputeWage();
+                Console.WriteLine(realiance.ToString());
+
+                Console.Read();
+
+            }
 
         }
     }
