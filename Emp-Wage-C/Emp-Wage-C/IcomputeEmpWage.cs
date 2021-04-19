@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace EmpWageComputation
 {
-    public interface IComputeEmpWage
+    //Creating Interface
+    public interface IcomputeEmpWage
     {
+        //Calling CompanyEmpWage
         void AddCompanyEmpWage(string company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth);
+        //Calling ComputeEmpWage
         void computeEmpWage();
+        //Initialized getTotalWage
         int getTotalWage(string company);
     }
 }
