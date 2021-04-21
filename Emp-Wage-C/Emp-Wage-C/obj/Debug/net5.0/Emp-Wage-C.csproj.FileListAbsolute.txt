@@ -14,3 +14,11 @@ C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\ne
 C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\ref\Emp-Wage-C.dll
 C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.pdb
 C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.genruntimeconfig.cache
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.csprojAssemblyReference.cache
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.AssemblyInfoInputs.cache
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.AssemblyInfo.cs
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.csproj.CoreCompileInputs.cache
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.dll
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\ref\Emp-Wage-C.dll
+C:\Users\Aishwarya\source\repos\Emp-Wage-Comp\Emp-Wage-Comp\Emp-Wage-C\Emp-Wage-C\obj\Debug\net5.0\Emp-Wage-C.pdb

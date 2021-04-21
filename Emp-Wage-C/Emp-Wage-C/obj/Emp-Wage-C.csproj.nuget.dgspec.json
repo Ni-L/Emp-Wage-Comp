@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj": {}
+    "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj": {
+    "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj",
+        "projectUniqueName": "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj",
         "projectName": "Emp-Wage-C",
-        "projectPath": "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj",
+        "projectPath": "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\Emp-Wage-C.csproj",
         "packagesPath": "C:\\Users\\Aishwarya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\obj\\",
+        "outputPath": "C:\\Users\\Aishwarya\\source\\repos\\Emp-Wage-Comp\\Emp-Wage-Comp\\Emp-Wage-C\\Emp-Wage-C\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Aishwarya\\AppData\\Roaming\\NuGet\\NuGet.Config",
